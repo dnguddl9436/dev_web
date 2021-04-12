@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DataGrid with Toolbar - jQuery EasyUI Demo</title>
+    <script type="text/javascript" nonce="2941c7e62fcd44d485a4c08d901" src="//local.adguard.org?ts=1618187179641&amp;type=content-script&amp;dmn=www.jeasyui.com&amp;app=chrome.exe&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
+<script type="text/javascript" nonce="2941c7e62fcd44d485a4c08d901" src="//local.adguard.org?ts=1618187179641&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../../demo/demo.css">
+    <script type="text/javascript" defer src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" defer src="../../js/jquery.easyui.min.js"></script>
+</head>
+<body>
+    <h2>DataGrid with Toolbar</h2>
+    <p>Put buttons on top toolbar of DataGrid.</p>
+    <div style="margin:20px 0;"></div>
+    <table class="easyui-datagrid" title="DataGrid with Toolbar" style="width:700px;height:250px"
+            data-options="rownumbers:true,singleSelect:true,url:'dept.json',method:'get',toolbar:toolbar">
+        <thead>
+            <tr>
+                <th data-options="field:'deptno',width:80">부서번호</th>
+                <th data-options="field:'dname',width:100">부서명</th>
+                <th data-options="field:'loc',width:80,align:'right'">지역</th>
+            </tr>
+        </thead>
+    </table>
+    <script type="text/javascript">
+        var toolbar = [{
+            text:'Add',
+            iconCls:'icon-add',
+            handler:function(){alert('add')}
+        },{
+            text:'Cut',
+            iconCls:'icon-cut',
+            handler:function(){alert('cut')}
+        },'-',{
+            text:'Save',
+            iconCls:'icon-save',
+            handler:function(){alert('save')}
+        }];
+    </script>
+</body>
+</html>
