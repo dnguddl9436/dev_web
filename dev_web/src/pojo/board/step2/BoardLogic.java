@@ -1,4 +1,4 @@
-package pojo.board.step1;
+package pojo.board.step2;
 
 import java.util.Map;
 

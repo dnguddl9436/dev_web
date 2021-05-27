@@ -1,4 +1,4 @@
-package pojo.board.step1;
+package pojo.board.step2;
 
 import org.apache.log4j.Logger;
 
