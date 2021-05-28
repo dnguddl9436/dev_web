@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.ZipCodeMapper">
+	<select id="getZipCodeList" parameterType="map" resultType="map">
+		select zipcode, zdo, address from zipcode_t where zipcode='689852'
+	</select>
+</mapper>
